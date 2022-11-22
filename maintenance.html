@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="maintenance.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <title>Maintenance</title>
+</head>
+<body>
+    <div class="maintenance_header">
+      <div class="video_container">
+        <video autoplay loop muted>
+          <source src="nb.mp4" type="video/mp4">
+      </video>
+      </div>
+      <div class="harry_container">
+        <!-- <div class="vapour">
+          <span style="--i:1;"></span>
+          <span style="--i:3;"></span>
+          <span style="--i:16;"></span>
+          <span style="--i:5;"></span>
+
+        </div> -->
+        <img src="images/h.png" alt="" width="250px" height="200px">
+      </div>
+       <div class="container-maintenance">
+        <div class="logo"><img src="./images/logo-csi.png"> </div> 
+         <div class="maintin"><h3>Le Site est en maintenance</h3></div>
+         <div class="fix" ><img src="./images/magicpen.png" alt=""></div>
+    <div class="text-maintenance">
+    <p>Notre equipe de Gryffindors est en train de lancer des sorts <span> magiques sur le site afin de le rendre operationnel  </span></p> 
+       </div>
+   </div>
+         
+         
+        <section class="tatly">
+          <div class="tat">
+            <div class="titre">
+                <div>  <img src="./images/musicfilter.png" alt=""> </div>
+                  <div> <h2>  Attendez en ecoutant :</h2> </div>
+              </div>
+
+            <div class="sing">
+
+               <div class="name">
+
+                  <audio id="audio1">
+		                    <source src="./audio/sic1.mp3" >
+	                </audio>
+
+                  <div class="icon" onclick="playPause(1)" id="playPauseBTN" >
+                     <img src="./images/Play.png" alt="" >
+                  </div>
+
+                <div class="star">
+                    <h4>STAR WALKIN'</h4>
+                    <p>Lil Nas X</p>
+                </div>
+
+               <div  class="stop">
+                   <img src="./images/stop.png" alt=""  onclick="stop(1)">
+              </div>
+
+            </div>
+
+                   <div class="name">
+
+                    <audio id="audio2">
+                      <source src="./audio/sic2.mp3" >
+                    </audio>
+
+                      <div class="icon" onclick="playPause(2)" id="playPauseBTN1" > 
+                        <img src="./images/play.png" alt="" >
+                      </div>
+        
+                  <div class="star">
+                    <h4>Missing Grey Cat</h4>
+                    <p>Mupp</p>
+                   </div>
+                   <div class="stop" onclick="stop(2)"> <img src="./images/stop.png" alt=""> </div>
+               </div>
+            
+
+            
+               <div class="name">
+
+                <audio id="audio3">
+                  <source src="./audio/sic3.mp3" >
+                </audio>
+
+                  <div class="icon" onclick="playPause(3)" id="playPauseBTN2">
+                    <img src="./images/Play.png" alt="">
+                  </div>
+                <div class="star">
+                    <h4>Somthing Like This</h4>
+                    <p>The Chainsmoker</p>
+                </div>
+                  <div  class="stop" onclick="stop(3)">
+                       <img src="./images/stop.png" alt="">
+                  </div>
+             </div>
+
+               
+                <div class="name">
+
+                  <audio id="audio4">
+                    <source src="./audio/sic4.mp3" >
+                  </audio>
+
+                    <div class="icon"  onclick="playPause(4)" id="playPauseBTN3">
+                      <img src="./images/Play.png" alt="">
+                    </div>
+                <div class="star">
+                    <h4>Dandelions</h4>
+                    <p>Ruth B.</p>
+                </div>
+                <div  class="stop"  onclick="stop(4)">
+                <img src="./images/stop.png" alt="">
+               </div>
+            </div>
+
+               <div class="name">
+
+                <audio id="audio5">
+                  <source src="./audio/sic5.mp3" >
+                </audio>
+
+
+                <div class="icon" onclick="playPause(5)" id="playPauseBTN4">
+                   <img src="./images/Play.png" alt=""> 
+                  </div>
+                <div class="star">
+                    <h4>Tourner dans le vide</h4>
+                    <p>Indila</p>
+                </div>
+              <div  class="stop" onclick="stop(5)">
+               <img src="./images/stop.png" alt="">
+            </div>
+            </div>
+
+            
+            <div class="name">
+
+              <audio id="audio6">
+                <source src="./audio/sic6.mp3" >
+              </audio>
+
+
+               <div class="icon" onclick="playPause(6)" id="playPauseBTN5">
+                <img src="./images/Play.png" alt="">
+              </div> 
+                <div class="star">
+                    <h4>Dancing (KRONO Remix)</h4>
+                    <p>Aaron Smith</p>
+                </div>
+                <div  class="stop" onclick="stop(6)">
+                <img src="./images/stop.png" alt="">
+            </div>
+            </div>
+
+
+        </div>
+       </div>
+
+
+  </section>
+  
+  <script>
+    
+    var audio1 = document.getElementById('audio1');
+    var audio2 = document.getElementById('audio2');
+    var audio3 = document.getElementById('audio3');
+    var audio4 = document.getElementById('audio4');
+    var audio5 = document.getElementById('audio5');
+    var audio6 = document.getElementById('audio6');
+var playPauseBTN = document.getElementById('playPauseBTN');
+var playPauseBTN1 = document.getElementById('playPauseBTN1');
+var playPauseBTN2 = document.getElementById('playPauseBTN2');
+var playPauseBTN3 = document.getElementById('playPauseBTN3');
+var playPauseBTN4 = document.getElementById('playPauseBTN4');
+var playPauseBTN5 = document.getElementById('playPauseBTN5');
+var count = 0;
+
+
+function playPause(num){
+if (num == 1){
+	if(count == 0){
+		count = 1;
+		audio1.play();
+
+    audio2.pause();
+    audio3.pause();
+    audio4.pause();
+    audio5.pause();
+    audio6.pause();
+
+		playPauseBTN.innerHTML = "<img src='./images/pause.png'>" ;
+    playPauseBTN1.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN2.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN3.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN4.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN5.innerHTML =  "<img src='./images/play.png'>";
+
+	}else{
+		count = 0;
+		audio1.pause();
+		playPauseBTN.innerHTML = "<img src='./images/play.png'>";
+	}
+} else if (num == 2){
+	if(count == 0){
+		count = 1;
+		audio2.play();
+
+
+    audio1.pause();
+    audio3.pause();
+    audio4.pause();
+    audio5.pause();
+    audio6.pause();
+
+		playPauseBTN1.innerHTML =  "<img src='./images/pause.png'>";
+    playPauseBTN.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN2.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN3.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN4.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN5.innerHTML =  "<img src='./images/play.png'>";
+	}else{
+		count = 0;
+		audio2.pause();
+		playPauseBTN1.innerHTML =  "<img src='./images/play.png'>";
+	}
+} else if (num == 3){
+	if(count == 0){
+		count = 1;
+		audio3.play();
+
+    audio1.pause();
+    audio2.pause();
+    audio4.pause();
+    audio5.pause();
+    audio6.pause();
+
+		playPauseBTN2.innerHTML =  "<img src='./images/pause.png'>";
+    playPauseBTN1.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN3.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN4.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN5.innerHTML =  "<img src='./images/play.png'>";
+	}else{
+		count = 0;
+		audio3.pause();
+		playPauseBTN2.innerHTML =  "<img src='./images/play.png'>";
+	}
+}else if (num == 4){
+	if(count == 0){
+		count = 1;
+		audio4.play();
+
+    audio1.pause();
+    audio2.pause();
+    audio3.pause();
+    audio5.pause();
+    audio6.pause();
+		playPauseBTN3.innerHTML =  "<img src='./images/pause.png'>";
+
+    playPauseBTN1.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN2.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN4.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN5.innerHTML =  "<img src='./images/play.png'>";
+	}else{
+		count = 0;
+		audio4.pause();
+		playPauseBTN3.innerHTML =  "<img src='./images/play.png'>";
+	}
+}else if (num == 5){
+	if(count == 0){
+		count = 1;
+		audio5.play();
+
+    audio1.pause();
+    audio2.pause();
+    audio3.pause();
+    audio4.pause();
+    audio6.pause();
+		playPauseBTN4.innerHTML =  "<img src='./images/pause.png'>";
+
+    playPauseBTN1.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN2.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN3.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN5.innerHTML =  "<img src='./images/play.png'>";
+	}else{
+		count = 0;
+		audio5.pause();
+		playPauseBTN4.innerHTML =  "<img src='./images/play.png'>";
+	}
+}else if (num == 6){
+	if(count == 0){
+		count = 1;
+		audio6.play();
+
+    audio1.pause();
+    audio2.pause();
+    audio3.pause();
+    audio4.pause();
+    audio5.pause();
+		playPauseBTN5.innerHTML =  "<img src='./images/pause.png'>";
+
+    playPauseBTN1.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN2.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN3.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN4.innerHTML =  "<img src='./images/play.png'>";
+    playPauseBTN.innerHTML =  "<img src='./images/play.png'>";
+	}else{
+		count = 0;
+		audio6.pause();
+		playPauseBTN5.innerHTML =  "<img src='./images/play.png'>";
+	}
+}
+
+
+}
+
+function stop(num){
+
+  if (num == 1){
+	playPause(1)
+	audio1.pause();
+	audio1.currentTime = 0;
+	playPauseBTN.innerHTML = "Play ►";
+  }  else  if (num == 2){
+	playPause(2)
+	audio2.pause();
+	audio2.currentTime = 0;
+	playPauseBTN1.innerHTML = "Play ►";
+  } else  if (num == 3){
+    playPause(3)
+    audio3.pause();
+    audio3.currentTime = 0;
+    playPauseBTN2.innerHTML = "Play ►";
+    }else  if (num == 4){
+      playPause(4)
+      audio4.pause();
+      audio4.currentTime = 0;
+      playPauseBTN3.innerHTML = "Play ►";
+      }else  if (num == 5){
+        playPause(5)
+        audio5.pause();
+        audio5.currentTime = 0;
+        playPauseBTN4.innerHTML = "Play ►";
+        }else  if (num == 6){
+          playPause(6)
+          audio6.pause();
+          audio6.currentTime = 0;
+          playPauseBTN5.innerHTML = "Play ►";
+          }
+
+}
+
+  </script>
+
+
+
+
+   
+</body>
+</html>

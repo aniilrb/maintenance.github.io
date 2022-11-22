@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #003451;
+  color: #fff;
+  overflow-x: hidden;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.logo img {
+  height: 250px;
+  width: 260px;
+}
+
+.maintin,
+.fix {
+  display: flex;
+  justify-content: center;
+}
+.text-maintenance {
+  display: flex;
+  justify-content: center;
+}
+.text-maintenance p {
+  width: 750px;
+  font-size: 25px;
+  height: 150px;
+  text-align: center;
+}
+/* .text-maintenance p span {
+  margin-left: 40px;
+} */
+.fix img {
+  height: 80px;
+}
+.titre {
+  display: flex;
+  gap: 0.8rem;
+  width: 70%;
+}
+
+.tatly {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+  position: absolute;
+  z-index: 999;
+  background: #000;
+  mix-blend-mode: multiply;
+  padding-bottom: 100px;
+}
+
+.tat {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.titre div {
+  display: flex;
+  align-items: center;
+}
+.titre div img {
+  height: 45px;
+}
+.sing {
+  margin-top: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+.name {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  gap: 15px;
+  border-bottom: solid;
+  height: 60px;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stop {
+  flex: 2 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.icon img {
+  height: 43px;
+}
+.star {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.stop img {
+  height: 40px;
+}
+.container-maintenance {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 720px;
+  position: relative;
+  z-index: 999;
+  background: #000;
+  mix-blend-mode: multiply;
+  border-bottom: 50px solid ;
+}
+.container-maintenance h3{
+  font-size: 30px;
+}
+.video_container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+.video_container video {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  object-fit: cover;
+}
+.harry_container {
+  position: absolute;
+  width: 100vw;
+  height: 1300px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  /* position: fixed;
+  z-index: 99999; */
+}
+.harry_container img {
+  z-index: 99999;
+  animation: fly 30s infinite;
+  position: relative;
+  left: 50px; /*0*/
+}
+/* 
+ .vapour {
+  position: absolute;
+  display: flex;
+   flex-direction: column; 
+  z-index: 9999;
+  transform: rotate(90deg);
+  top: -170px;
+  left: -200px;
+}
+.vapour span {
+  min-width: 8px;
+  height: 120px;
+  display: block;
+  margin: 0 2px 50px;
+  background: #fff;
+  border-radius: 50%;
+  animation: smoke 5s linear infinite;
+  opacity: 0;
+  filter: blur(8px);
+  animation-delay: calc(var(--i) * -0.5s);
+}  */
+@keyframes fly {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  15% {
+    left: 80%;
+    top: 0;
+  }
+  30% {
+    left: 80%;
+    top: 70%;
+    transform: rotate(90deg);
+  }
+  35% {
+    transform: rotate(180deg);
+  }
+
+  55% {
+    top: 70%;
+    transform: rotate(180deg);
+  }
+  70% {
+    left: 0;
+    transform: rotate(270deg);
+  }
+  100% {
+    top: 0;
+    transform: rotate(360deg);
+  }
+}
+
+/* @keyframes smoke {
+  0% {
+    transform: translateY(0) scaleX(1);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(150px) scaleX(5);
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(300px) scaleX(10);
+  }
+} */
+@media screen and (max-width: 900px) {
+  .tat {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .titre {
+    width: 90%;
+  }
+  .container-maintenance {
+    justify-content: center;
+    align-items: center;
+  }
+  .text-maintenance p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
