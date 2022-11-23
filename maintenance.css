@@ -255,8 +255,12 @@ body {
     align-items: center;
     width: 85%;
     font-size: 22px;
+    height:200px;
   }
   .harry_container img {
     display: none;
+  }
+  .maintin h3{
+    font-size: 20px;
   }
 }
