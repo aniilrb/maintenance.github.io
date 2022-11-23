@@ -130,9 +130,9 @@ body {
   z-index: 999;
   background: #000;
   mix-blend-mode: multiply;
-  border-bottom: 50px solid ;
+  border-bottom: 50px solid;
 }
-.container-maintenance h3{
+.container-maintenance h3 {
   font-size: 30px;
 }
 .video_container {
@@ -253,5 +253,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 85%;
+    font-size: 22px;
+  }
+  .harry_container img {
+    display: none;
   }
 }
